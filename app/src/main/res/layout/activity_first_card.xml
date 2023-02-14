@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EACAD4"
+    android:orientation="vertical"
+    tools:context=".First_Card">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_android"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="15dp"
+        app:cardElevation="45dp"
+        android:backgroundTint="#E91E63"
+        app:cardCornerRadius="25dp">
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="History of Valentine's Day"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="italic|bold" />
+    </androidx.cardview.widget.CardView>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/history"
+            android:textColor="#08577A"
+            android:textStyle="italic"
+            android:textSize="24sp" />
+    </ScrollView>
+</LinearLayout>
