@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
         cardViewMessage.setOnClickListener {
-            val intent=Intent(this,Second_Card::class.java)
+            val intent=Intent(this,CoderLife::class.java)
             startActivity(intent)
         }
     }
