@@ -1,365 +1,412 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     tools:context=".Second_Card">
-    <LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardview_parents"
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
         android:layout_width="match_parent"
-        android:layout_height="35dp"
-        android:layout_marginTop="15dp"
-        app:cardElevation="45dp"
-        android:backgroundTint="#2196F3"
-        app:cardCornerRadius="25dp">
-        <TextView
-            android:id="@+id/txt_parents"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="Parents"
-            android:textColor="@color/white"
-            android:textSize="22dp"
-            android:textStyle="italic|bold" />
-    </androidx.cardview.widget.CardView>
-    <LinearLayout
-        android:id="@+id/layout_java_kotlin"
-        android:layout_width="match_parent"
-        android:layout_marginTop="8dp"
         android:layout_height="wrap_content">
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginLeft="25dp"
-            android:weightSum="6">
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/img_java"
-                android:layout_width="100dp"
-                android:layout_weight="4"
-                android:layout_height="150dp"
-                android:src="@drawable/me_mum"
-                app:civ_border_width="4dp"
-                app:civ_border_color="#F44336"
-                />
-            <ScrollView
-                android:layout_width="match_parent"
-                android:layout_weight="2"
-                android:layout_height="50dp">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="30dp"
-                    android:text="@string/mom"
-                    android:textSize="15sp" />
-            </ScrollView>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginLeft="120dp"
-            android:weightSum="6">
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/img_xml"
-                android:layout_width="100dp"
-                android:layout_weight="4"
-                android:layout_height="150dp"
-                android:src="@drawable/me_dad"
-                app:civ_border_width="4dp"
-                app:civ_border_color="#3F51B5"
-                />
-            <ScrollView
-                android:layout_width="match_parent"
-                android:layout_weight="2"
-                android:layout_height="50dp">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/papa"
-                    android:textSize="15sp" />
-            </ScrollView>
-        </LinearLayout>
-    </LinearLayout>
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cardview_BrotherSister"
             android:layout_width="match_parent"
-            android:layout_height="35dp"
-            android:layout_marginTop="15dp"
-            app:cardElevation="45dp"
-            android:backgroundTint="#2196F3"
-            app:cardCornerRadius="25dp">
-            <TextView
-                android:id="@+id/txt_brosister"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="Siblings"
-                android:textColor="@color/white"
-                android:textSize="22dp"
-                android:textStyle="italic|bold" />
-        </androidx.cardview.widget.CardView>
-    <LinearLayout
-        android:id="@+id/layout_brother_sister"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="25dp">
-        <LinearLayout
-            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginLeft="25dp"
-            android:weightSum="6">
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:layout_width="100dp"
-                android:layout_weight="4"
-                android:layout_height="150dp"
-                android:src="@drawable/me_bro1"
-                app:civ_border_width="4dp"
-                app:civ_border_color="@color/green"
-                />
-            <ScrollView
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview_parents"
                 android:layout_width="match_parent"
-                android:layout_weight="2"
-                android:layout_height="50dp">
+                android:layout_height="35dp"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="#2196F3"
+                app:cardCornerRadius="25dp"
+                app:cardElevation="45dp">
+
                 <TextView
+                    android:id="@+id/txt_parents"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/bhai"
-                    android:textSize="15sp" />
-            </ScrollView>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginLeft="120dp"
-            android:weightSum="6">
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:layout_width="100dp"
-                android:layout_weight="4"
-                android:layout_height="150dp"
-                android:src="@drawable/sister_me"
-                app:civ_border_width="4dp"
-                app:civ_border_color="#FFC107"
-                />
-            <ScrollView
-                android:layout_width="match_parent"
-                android:layout_weight="2"
-                android:layout_height="50dp">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/anu"
-                    android:textSize="15sp" />
-            </ScrollView>
-        </LinearLayout>
-    </LinearLayout>
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cardview_friends"
-            android:layout_width="match_parent"
-            android:layout_height="35dp"
-            android:layout_marginTop="25dp"
-            app:cardElevation="45dp"
-            android:backgroundTint="#2196F3"
-            app:cardCornerRadius="25dp">
-            <TextView
-                android:id="@+id/txt_friends"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="Friends(JIGRI)"
-                android:textColor="@color/white"
-                android:textSize="22dp"
-                android:textStyle="italic|bold" />
-        </androidx.cardview.widget.CardView>
-    <LinearLayout
-        android:id="@+id/layout_inspiration"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="25dp">
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginLeft="25dp"
-            android:weightSum="6">
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:layout_width="100dp"
-                android:layout_weight="4"
-                android:layout_height="150dp"
-                android:src="@drawable/ajay"
-                app:civ_border_width="4dp"
-                app:civ_border_color="@color/green"
-                />
-            <ScrollView
-                android:layout_width="match_parent"
-                android:layout_weight="2"
-                android:layout_height="50dp">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/ajay"
-                    android:textSize="15sp" />
-            </ScrollView>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginLeft="120dp"
-            android:weightSum="6">
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:layout_width="100dp"
-                android:layout_weight="4"
-                android:layout_height="150dp"
-                android:src="@drawable/bestie1"
-                app:civ_border_width="4dp"
-                app:civ_border_color="#FFC107"
-                />
-            <ScrollView
-                android:layout_width="match_parent"
-                android:layout_weight="2"
-                android:layout_height="50dp">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/anshika"
-                    android:textSize="15sp" />
-            </ScrollView>
-        </LinearLayout>
-</LinearLayout>
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cardview_inspiration"
-            android:layout_width="match_parent"
-            android:layout_height="35dp"
-            android:layout_marginTop="25dp"
-            app:cardElevation="45dp"
-            android:backgroundTint="#2196F3"
-            app:cardCornerRadius="25dp">
-            <TextView
-                android:id="@+id/txt_inspirations"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="@string/inspiration_android"
-                android:textColor="@color/white"
-                android:textSize="22dp"
-                android:textStyle="italic|bold" />
-        </androidx.cardview.widget.CardView>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_marginTop="8dp"
-            android:layout_height="wrap_content">
+                    android:gravity="center"
+                    android:text="Parents"
+                    android:textColor="@color/white"
+                    android:textSize="22dp"
+                    android:textStyle="italic|bold" />
+            </androidx.cardview.widget.CardView>
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:id="@+id/layout_java_kotlin"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginLeft="25dp"
-                android:weightSum="6">
-                <de.hdodenhof.circleimageview.CircleImageView
-                    android:layout_width="100dp"
-                    android:layout_weight="4"
-                    android:layout_height="150dp"
-                    android:src="@drawable/saumya_singh"
-                    app:civ_border_width="4dp"
-                    app:civ_border_color="#F44336"
-                    />
-                <ScrollView
-                    android:layout_width="match_parent"
-                    android:layout_weight="2"
-                    android:layout_height="50dp">
-                    <TextView
+                android:layout_marginTop="8dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:orientation="vertical"
+                    android:weightSum="6">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/img_java"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="4"
+                        android:src="@drawable/me_mum"
+                        app:civ_border_color="#d91ab6"
+                        app:civ_border_width="4dp" />
+
+                    <androidx.core.widget.NestedScrollView
                         android:layout_width="match_parent"
-                        android:layout_height="30dp"
-                        android:text="@string/saumya"
-                        android:textSize="15sp" />
-                </ScrollView>
+                        android:layout_height="45dp"
+                        android:layout_weight="2">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:text="@string/mom"
+                            android:textSize="15sp" />
+                    </androidx.core.widget.NestedScrollView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="120dp"
+                    android:orientation="vertical"
+                    android:weightSum="6">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/img_xml"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="4"
+                        android:src="@drawable/me_papa"
+                        app:civ_border_color="#3F51B5"
+                        app:civ_border_width="4dp" />
+
+                    <androidx.core.widget.NestedScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_weight="2">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/papa"
+                            android:textSize="15sp" />
+                    </androidx.core.widget.NestedScrollView>
+                </LinearLayout>
             </LinearLayout>
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginLeft="120dp"
-                android:weightSum="6">
-                <de.hdodenhof.circleimageview.CircleImageView
-                    android:layout_width="100dp"
-                    android:layout_weight="4"
-                    android:layout_height="150dp"
-                    android:src="@drawable/anuj_bhaiya"
-                    app:civ_border_width="4dp"
-                    app:civ_border_color="#3F51B5"
-                    />
-                <ScrollView
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview_BrotherSister"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="25dp"
+                android:backgroundTint="#ed6c26"
+                app:cardCornerRadius="25dp"
+                app:cardElevation="45dp">
+
+                <TextView
+                    android:id="@+id/txt_brosister"
                     android:layout_width="match_parent"
-                    android:layout_weight="2"
-                    android:layout_height="50dp">
-                    <TextView
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Siblings"
+                    android:textColor="@color/white"
+                    android:textSize="22dp"
+                    android:textStyle="italic|bold" />
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/layout_brother_sister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:orientation="vertical"
+                    android:weightSum="6">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="4"
+                        android:src="@drawable/me_bro1"
+                        app:civ_border_color="@color/green"
+                        app:civ_border_width="4dp" />
+
+                    <androidx.core.widget.NestedScrollView
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/anuj_bhaiya"
-                        android:textSize="15sp" />
-                </ScrollView>
+                        android:layout_height="50dp"
+                        android:layout_weight="2">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/bhai"
+                            android:textSize="15sp" />
+                    </androidx.core.widget.NestedScrollView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="120dp"
+                    android:orientation="vertical"
+                    android:weightSum="6">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="4"
+                        android:src="@drawable/sister_me"
+                        app:civ_border_color="#FFC107"
+                        app:civ_border_width="4dp" />
+
+                    <androidx.core.widget.NestedScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="2">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/anu"
+                            android:textSize="15sp" />
+                    </androidx.core.widget.NestedScrollView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview_friends"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="25dp"
+                android:backgroundTint="#34ebe8"
+                app:cardCornerRadius="25dp"
+                app:cardElevation="45dp">
+
+                <TextView
+                    android:id="@+id/txt_friends"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Friends(JIGRI)"
+                    android:textColor="@color/white"
+                    android:textSize="22dp"
+                    android:textStyle="italic|bold" />
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/layout_inspiration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:orientation="vertical"
+                    android:weightSum="6">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="4"
+                        android:src="@drawable/ajay"
+                        app:civ_border_color="#F44336"
+                        app:civ_border_width="4dp" />
+
+                    <androidx.core.widget.NestedScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="2">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ajay"
+                            android:textSize="15sp" />
+                    </androidx.core.widget.NestedScrollView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="120dp"
+                    android:orientation="vertical"
+                    android:weightSum="6">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="4"
+                        android:src="@drawable/bestie1"
+                        app:civ_border_color="#d91ab6"
+                        app:civ_border_width="4dp" />
+
+                    <androidx.core.widget.NestedScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="2">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/anshika"
+                            android:textSize="15sp" />
+                    </androidx.core.widget.NestedScrollView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview_inspiration"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="25dp"
+                android:backgroundTint="#eaed26"
+                app:cardCornerRadius="25dp"
+                app:cardElevation="45dp">
+
+                <TextView
+                    android:id="@+id/txt_inspirations"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/inspiration_android"
+                    android:textColor="@color/white"
+                    android:textSize="22dp"
+                    android:textStyle="italic|bold" />
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:orientation="vertical"
+                    android:weightSum="6">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="4"
+                        android:src="@drawable/saumya_singh"
+                        app:civ_border_color="#d40daf"
+                        app:civ_border_width="4dp" />
+
+                    <androidx.core.widget.NestedScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="2">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:text="@string/saumya"
+                            android:textSize="15sp" />
+                    </androidx.core.widget.NestedScrollView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="120dp"
+                    android:orientation="vertical"
+                    android:weightSum="6">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="4"
+                        android:src="@drawable/anuj_bhaiya"
+                        app:civ_border_color="#3F51B5"
+                        app:civ_border_width="4dp" />
+
+                    <androidx.core.widget.NestedScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="2">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/anuj_bhaiya"
+                            android:textSize="15sp" />
+                    </androidx.core.widget.NestedScrollView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:orientation="vertical"
+                    android:weightSum="6">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="4"
+                        android:src="@drawable/phillip_lackner"
+                        app:civ_border_color="#48d40d"
+                        app:civ_border_width="4dp" />
+
+                    <androidx.core.widget.NestedScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="2">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:text="@string/phillip"
+                            android:textSize="15sp" />
+                    </androidx.core.widget.NestedScrollView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="120dp"
+                    android:orientation="vertical"
+                    android:weightSum="6">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="4"
+                        android:src="@drawable/sagar_khurrana"
+                        app:civ_border_color="#660dd4"
+                        app:civ_border_width="4dp" />
+
+                    <androidx.core.widget.NestedScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="2">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/sagar"
+                            android:textSize="15sp" />
+                    </androidx.core.widget.NestedScrollView>
+                </LinearLayout>
             </LinearLayout>
         </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_marginTop="8dp"
-            android:layout_height="wrap_content">
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginLeft="25dp"
-                android:weightSum="6">
-                <de.hdodenhof.circleimageview.CircleImageView
-                    android:layout_width="100dp"
-                    android:layout_weight="4"
-                    android:layout_height="150dp"
-                    android:src="@drawable/phillip_lackner"
-                    app:civ_border_width="4dp"
-                    app:civ_border_color="#F44336"
-                    />
-                <ScrollView
-                    android:layout_width="match_parent"
-                    android:layout_weight="2"
-                    android:layout_height="50dp">
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="30dp"
-                        android:text="@string/phillip"
-                        android:textSize="15sp" />
-                </ScrollView>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginLeft="120dp"
-                android:weightSum="6">
-                <de.hdodenhof.circleimageview.CircleImageView
-                    android:layout_width="100dp"
-                    android:layout_weight="4"
-                    android:layout_height="150dp"
-                    android:src="@drawable/sagar_khurrana"
-                    app:civ_border_width="4dp"
-                    app:civ_border_color="#3F51B5"
-                    />
-                <ScrollView
-                    android:layout_width="match_parent"
-                    android:layout_weight="2"
-                    android:layout_height="50dp">
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/sagar"
-                        android:textSize="15sp" />
-                </ScrollView>
-            </LinearLayout>
-        </LinearLayout>
-    </LinearLayout>
-    </ScrollView>
+    </androidx.core.widget.NestedScrollView>
+    </RelativeLayout>

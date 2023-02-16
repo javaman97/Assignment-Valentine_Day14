@@ -7,13 +7,9 @@
     android:background="#F4E2E6"
     android:gravity="center"
     tools:context=".Splash_Screen">
-    <androidx.cardview.widget.CardView
-        android:layout_width="wrap_content"
-        app:cardCornerRadius="60dp"
-        android:layout_height="wrap_content">
-        <ImageView
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/splashScreenImage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/love" />
-    </androidx.cardview.widget.CardView>
 </LinearLayout>

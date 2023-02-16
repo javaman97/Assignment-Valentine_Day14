@@ -17,7 +17,7 @@ class Sorry_SingleLife : AppCompatActivity() {
             startActivity(intent)
         }
         btnSelfLove.setOnClickListener{
-            val intent= Intent(this,Sorry_SingleLife::class.java)
+            val intent= Intent(this,CoderLife::class.java)
             startActivity(intent)
         }
     }

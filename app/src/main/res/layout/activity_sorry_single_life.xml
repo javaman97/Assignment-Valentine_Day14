@@ -20,42 +20,58 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="Coder Has No Life"
-        android:textColor="#CCC8C8"
-        android:textSize="24sp"
+        android:text="Myth : \nCoder Has No Life"
+        android:textAlignment="center"
+        android:textColor="#E39F8A"
+        android:textSize="25sp"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="@+id/imageView2"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.53"
+        app:layout_constraintVertical_bias="0.023"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Living Life :)"
+        android:textAlignment="center"
+        android:textColor="#A6B4BF"
+        android:textSize="25sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.526"
         tools:layout_editor_absoluteX="0dp" />
 
     <Button
         android:id="@+id/button_family"
-        android:layout_width="150dp"
-        android:layout_height="72dp"
+        android:layout_width="135dp"
+        android:layout_height="60dp"
         android:backgroundTint="#80EA80"
         android:text="Loved Ones"
-        android:textColor="#FF5722"
-        android:textSize="17sp"
+        android:textColor="#E91E63"
+        android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.869"
+        app:layout_constraintHorizontal_bias="0.873"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.679" />
+        app:layout_constraintVertical_bias="0.814" />
 
     <Button
         android:id="@+id/button_selflove"
-        android:layout_width="150dp"
-        android:layout_height="72dp"
+        android:layout_width="135dp"
+        android:layout_height="60dp"
         android:backgroundTint="#80EA80"
         android:text="Self Love"
-        android:textColor="#FF5722"
+        android:textColor="#03A9F4"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.195"
+        app:layout_constraintHorizontal_bias="0.164"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.679" />
+        app:layout_constraintVertical_bias="0.814" />
 </androidx.constraintlayout.widget.ConstraintLayout>

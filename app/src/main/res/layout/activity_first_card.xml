@@ -26,7 +26,7 @@
             android:textSize="25dp"
             android:textStyle="italic|bold" />
     </androidx.cardview.widget.CardView>
-    <ScrollView
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_marginLeft="10dp"
         android:layout_height="wrap_content">
@@ -37,5 +37,5 @@
             android:textColor="#FCFDFD"
             android:textStyle="italic"
             android:textSize="28sp" />
-    </ScrollView>
+    </androidx.core.widget.NestedScrollView>
 </LinearLayout>

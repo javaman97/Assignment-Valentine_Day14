@@ -183,7 +183,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Cuties-Masum Bnane Kis Koshish"
+                    android:text="Cuties-Masum Bnane Ki Koshish"
                     android:textSize="15sp" />
             </ScrollView>
         </LinearLayout>
